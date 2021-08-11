@@ -1,0 +1,80 @@
+<html>
+<head>
+	<title>Box Model Padding</title>
+	<style>
+		.bluebox
+		{
+			background-image:url(Images/berries.jpg);
+			background-size:100% 100%;
+			background-repeat:no-repeat;
+			background-origin:content-box;
+			color:white;
+			width:auto;
+			font-size:25px;
+			height:200px;
+			font-family:Brush Script MT;
+			padding:16px;
+			border:10px orange ridge;
+			outline-style:solid;
+			outline-color:#1F51FF;
+			outline-width:thick;
+			margin:20px;
+		}
+
+		.blackbox
+		{
+			background-image:url(Images/brooklyn.jpg);
+			background-size:2000px 2000px;
+			background-repeat:no-repeat;
+			background-origin:inherit;
+			color:white;
+			width:auto;
+			height:200px;
+			font-family:Lucida Handwriting;
+			font-size:25px;
+			padding:10px 5px 7px 3em;
+			border-width:10px 15px 5px 10px;
+			border-color:lavender blue green yellow;
+			border-style:ridge;
+			margin:60px 10px 30px 20px;
+		}
+
+		.yellowbox
+		{
+			background-image:url(Images/trees.jpg);
+			background-size:50px 50px;
+			background-repeat:no-repeat;
+			background-origin:border-box;
+			background-position:left;
+			color:white;
+			width:100px;
+			height:100px;
+			font-family:papyrus;
+			font-size:25px;
+			padding:10px;
+			border-style:groove;
+			border-color:red;
+			border-radius:80px;
+			border-width:10px;
+			margin:60px 10px;
+		}
+		
+		p{
+			margin:0;
+			background-color:#8bbbbf;
+		}
+
+	</style>
+</head>
+<body>
+	<p class="bluebox">Facebook 
+	
+	</p>
+	<p class="blackbox">Apple
+	
+	</p>
+	<p class="yellowbox">Microsoft
+	 
+	</p>
+</body>
+</html>

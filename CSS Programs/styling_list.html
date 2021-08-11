@@ -1,0 +1,51 @@
+<html>
+<head>
+	<title>List Styling</title>
+		<style>
+			ul.list1
+			{
+				/*list-style:square;*/
+				/*list-style:lower-alpha*/
+				/*list-style:lower-greek;*/
+				/*list-style:lower-latin*/
+				/*list-style:lower-roman*/
+				list-style-image:url(Images/bluebutton.png);
+			}
+			
+			ul.list2
+			{
+				/*list-style:lower-roman;*/
+				list-style:none;
+				padding:0;
+				margin:0;	
+			}
+
+			ul.list2 li{
+				
+				background-image:url(Images/bluebutton.png);
+				background-repeat:no-repeat;
+				background-position:0px center;
+				padding-left:60px;
+			}
+		</style>
+</head>
+<body>
+<p>A list Of Europian Capital
+<ul class="list1">
+<li>Paris</li>
+<li>London</li>
+<li>Madrid</li>
+</ul>
+</p>
+<p>
+A List Of Europian Capitals
+<ul class="list2">
+<li>Paris</li>
+<li>London</li>
+<li>Madrid</li>
+</ul>
+</p>
+
+
+</body>
+</html>

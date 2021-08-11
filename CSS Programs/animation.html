@@ -1,0 +1,83 @@
+<html>
+<head>
+	<title>Animation example</title>
+
+	<style>
+	.bluebox
+		{
+			/*color:black;*/
+			background-color:#3C5A99;*/
+			color:white;
+			height:100px;
+			width:100px;
+			position:relative;
+			/*transform:rotate(30deg);*/
+			/*-ms-transform:rotate(30deg);*/
+			/*-webkit-transform:rotate(30deg);*/
+			/*transform:translate(40px,30px);*/
+			/*transform:translate(40px);*/
+			/* transform:scale(0.5);*/
+			 /*transform:scale(2,2);*/
+			 /*transform:scale(0.5,1)*/
+			 /*transform:skewx(10deg);*/
+			 /*transform:skewy(10deg);*/
+			 /*transform:skew(10deg,10deg);*/
+			/* transform:rotatex(30deg);*/
+			 /*transform:rotatey(30deg);*/
+			 /*-ms-transform:rotate(30deg);*/
+			/*-webkit-transform:rotate(30deg);*/
+			/*transition:width 1s;*/
+			animation: myanimation 3s;
+
+		}
+
+		/*@-webkit-keyframes myanimation{
+			
+			from{background:green}
+			to{background:#3C5A99}
+		}*/
+
+		@keyframes myanimation
+		{
+			0% {background:red;left:0px;top:0px}
+			25% {background:blue;left:200px;top:0px}
+			50% {background:green;left:200px;top:200px}
+			75% {background:lavender;left:0px;top:200px}
+			100% {background:red;left:0px;top:0px}
+		}
+
+		
+		.blackbox
+		{
+			color:white;
+			background-color:#333333;
+			height:100px;
+			width:auto;
+		}
+		.yellowbox
+		{
+			color:white;
+			background-color:rgb(255,186,8);
+			height:100px;
+			width:100px;
+			transition:width 1s,height 1s,transform 3s;
+		}
+		
+		</style>
+
+	
+</head>
+	<body>
+		<div class="bluebox">
+		<p>Facebook</p>
+	</div>
+
+	<div class="blackbox">
+		<p>Apple</p>
+	</div>
+
+	<div class="yellowbox">
+		<p>Microsoft</p>
+	</div>
+	</body>
+</html>
